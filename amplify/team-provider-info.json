@@ -1,0 +1,22 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifydaysphoto-dev-225838-authRole",
+            "UnauthRoleArn": "arn:aws:iam::088987693321:role/amplify-amplifydaysphoto-dev-225838-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::088987693321:role/amplify-amplifydaysphoto-dev-225838-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-amplifydaysphoto-dev-225838-deployment",
+            "UnauthRoleName": "amplify-amplifydaysphoto-dev-225838-unauthRole",
+            "StackName": "amplify-amplifydaysphoto-dev-225838",
+            "StackId": "arn:aws:cloudformation:us-west-2:088987693321:stack/amplify-amplifydaysphoto-dev-225838/3b6ed220-c660-11ea-948d-0678f540705a",
+            "AmplifyAppId": "dglzhyjvqm3ui"
+        },
+        "categories": {
+            "auth": {
+                "amplifydaysphoto96620395": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
+        }
+    }
+}

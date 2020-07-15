@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AFA65BF8AE65A6DFE6D76F /* Pods_AmplifyDaysPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18973D3A4714E1D6763A1EC /* Pods_AmplifyDaysPhoto.framework */; };
 		9E26E24D24BECC1F00037412 /* AmplifyDaysPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26E24C24BECC1F00037412 /* AmplifyDaysPhotoApp.swift */; };
 		9E26E24F24BECC1F00037412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E26E24E24BECC1F00037412 /* ContentView.swift */; };
 		9E26E25124BECC2000037412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E26E25024BECC2000037412 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244DEB3891E3B8613DC8A5AD /* Pods-AmplifyDaysPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyDaysPhoto.release.xcconfig"; path = "Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto.release.xcconfig"; sourceTree = "<group>"; };
 		9E26E24924BECC1F00037412 /* AmplifyDaysPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmplifyDaysPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E26E24C24BECC1F00037412 /* AmplifyDaysPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyDaysPhotoApp.swift; sourceTree = "<group>"; };
 		9E26E24E24BECC1F00037412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9E26E25024BECC2000037412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E26E25324BECC2000037412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E26E25524BECC2000037412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18973D3A4714E1D6763A1EC /* Pods_AmplifyDaysPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyDaysPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA17D3D186468F92095F97E3 /* Pods-AmplifyDaysPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyDaysPhoto.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45AFA65BF8AE65A6DFE6D76F /* Pods_AmplifyDaysPhoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77E14D13E4297163F204F4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C18973D3A4714E1D6763A1EC /* Pods_AmplifyDaysPhoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DBAF0B5ABC57B72D7E0CEFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA17D3D186468F92095F97E3 /* Pods-AmplifyDaysPhoto.debug.xcconfig */,
+				244DEB3891E3B8613DC8A5AD /* Pods-AmplifyDaysPhoto.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E26E24024BECC1E00037412 = {
 			isa = PBXGroup;
 			children = (
 				9E26E24B24BECC1F00037412 /* AmplifyDaysPhoto */,
 				9E26E24A24BECC1F00037412 /* Products */,
+				8DBAF0B5ABC57B72D7E0CEFD /* Pods */,
+				77E14D13E4297163F204F4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E26E25824BECC2000037412 /* Build configuration list for PBXNativeTarget "AmplifyDaysPhoto" */;
 			buildPhases = (
+				5BC28628DC0BA6B20289D141 /* [CP] Check Pods Manifest.lock */,
 				9E26E24524BECC1F00037412 /* Sources */,
 				9E26E24624BECC1F00037412 /* Frameworks */,
 				9E26E24724BECC1F00037412 /* Resources */,
+				B6BE60932221A5C1A305E108 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BC28628DC0BA6B20289D141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmplifyDaysPhoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6BE60932221A5C1A305E108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E26E24524BECC1F00037412 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		9E26E25924BECC2000037412 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA17D3D186468F92095F97E3 /* Pods-AmplifyDaysPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +356,7 @@
 		};
 		9E26E25A24BECC2000037412 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DEB3891E3B8613DC8A5AD /* Pods-AmplifyDaysPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

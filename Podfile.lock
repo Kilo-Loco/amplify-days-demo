@@ -1,0 +1,90 @@
+PODS:
+  - Amplify (1.0.4):
+    - Amplify/Default (= 1.0.4)
+  - Amplify/Default (1.0.4)
+  - AmplifyPlugins/AWSAPIPlugin (1.0.4):
+    - AppSyncRealTimeClient (~> 1.1.0)
+    - AWSAuthCore (~> 2.14.0)
+    - AWSCore (~> 2.14.0)
+    - AWSPluginsCore (= 1.0.4)
+    - ReachabilitySwift (~> 5.0.0)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (1.0.4):
+    - AWSAuthCore (~> 2.14.0)
+    - AWSCore (~> 2.14.0)
+    - AWSMobileClient (~> 2.14.0)
+    - AWSPluginsCore (= 1.0.4)
+  - AmplifyPlugins/AWSDataStorePlugin (1.0.4):
+    - AWSAuthCore (~> 2.14.0)
+    - AWSCore (~> 2.14.0)
+    - AWSPluginsCore (= 1.0.4)
+    - SQLite.swift (~> 0.12.0)
+  - AmplifyPlugins/AWSS3StoragePlugin (1.0.4):
+    - AWSAuthCore (~> 2.14.0)
+    - AWSCore (~> 2.14.0)
+    - AWSPluginsCore (= 1.0.4)
+    - AWSS3 (~> 2.14.0)
+  - AppSyncRealTimeClient (1.1.6):
+    - Starscream (= 3.0.6)
+  - AWSAuthCore (2.14.2):
+    - AWSCore (= 2.14.2)
+  - AWSCognitoIdentityProvider (2.14.2):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.14.2)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.14.2)
+  - AWSMobileClient (2.14.2):
+    - AWSAuthCore (= 2.14.2)
+    - AWSCognitoIdentityProvider (= 2.14.2)
+  - AWSPluginsCore (1.0.4):
+    - Amplify (= 1.0.4)
+    - AWSCore (~> 2.14.0)
+    - AWSMobileClient (~> 2.14.0)
+  - AWSS3 (2.14.2):
+    - AWSCore (= 2.14.2)
+  - ReachabilitySwift (5.0.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - Starscream (3.0.6)
+
+DEPENDENCIES:
+  - Amplify
+  - AmplifyPlugins/AWSAPIPlugin
+  - AmplifyPlugins/AWSCognitoAuthPlugin
+  - AmplifyPlugins/AWSDataStorePlugin
+  - AmplifyPlugins/AWSS3StoragePlugin
+
+SPEC REPOS:
+  trunk:
+    - Amplify
+    - AmplifyPlugins
+    - AppSyncRealTimeClient
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPluginsCore
+    - AWSS3
+    - ReachabilitySwift
+    - SQLite.swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Amplify: 7626e435f3e78ac3508252557e375f994d5d5154
+  AmplifyPlugins: aba4f9e4432ebc089aaea45722d2c5711d3e58f4
+  AppSyncRealTimeClient: 4a2ccdc1722750a1f4d76e216f9bfb1cf12f10de
+  AWSAuthCore: 7ab6f5ab60ba8bb91a4868581946a993cbbae76d
+  AWSCognitoIdentityProvider: 609856c741ef86037055223b3a46f4eeb49319d0
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 80da498ab0979e77dbdc7690a61ceaaccfb0499a
+  AWSMobileClient: b80f21439aa95df2375e7acdde76d2f60c12f4b7
+  AWSPluginsCore: 646f8c2d831a52f2293da0dfd59a31eee61f6ad5
+  AWSS3: 2ea579ed91fb01a187f7d8d827e3936da488531e
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+
+PODFILE CHECKSUM: 5b460e6faf14d3c06b9578aba32bfe004591b796
+
+COCOAPODS: 1.9.3

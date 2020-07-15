@@ -1,0 +1,73 @@
+# this is an auto generated file. This will be overwritten
+query GetPhoto($id: ID!) {
+  getPhoto(id: $id) {
+    id
+    key
+    isFeatured
+    photographer {
+      id
+      photos {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListPhotos(
+  $filter: ModelPhotoFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPhotos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      key
+      isFeatured
+      photographer {
+        id
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetPhotographer($id: ID!) {
+  getPhotographer(id: $id) {
+    id
+    photos {
+      items {
+        id
+        key
+        isFeatured
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListPhotographers(
+  $filter: ModelPhotographerFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPhotographers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      photos {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

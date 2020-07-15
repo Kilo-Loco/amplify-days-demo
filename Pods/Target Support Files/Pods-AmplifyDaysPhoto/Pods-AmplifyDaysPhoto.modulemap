@@ -1,0 +1,6 @@
+framework module Pods_AmplifyDaysPhoto {
+  umbrella header "Pods-AmplifyDaysPhoto-umbrella.h"
+
+  export *
+  module * { export * }
+}

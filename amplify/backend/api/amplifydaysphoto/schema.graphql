@@ -1,0 +1,11 @@
+type Photo @model {
+  id: ID!
+  key: String!
+  isFeatured: Boolean!
+  photographer: Photographer @connection(name: "PhotographerPhotos")
+}
+
+type Photographer @model {
+  id: ID!
+  photos: [Photo] @connection(name: "PhotographerPhotos")
+}

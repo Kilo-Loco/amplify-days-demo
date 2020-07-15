@@ -1,0 +1,103 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreatePhoto {
+  onCreatePhoto {
+    id
+    key
+    isFeatured
+    photographer {
+      id
+      photos {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePhoto {
+  onUpdatePhoto {
+    id
+    key
+    isFeatured
+    photographer {
+      id
+      photos {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePhoto {
+  onDeletePhoto {
+    id
+    key
+    isFeatured
+    photographer {
+      id
+      photos {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreatePhotographer {
+  onCreatePhotographer {
+    id
+    photos {
+      items {
+        id
+        key
+        isFeatured
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdatePhotographer {
+  onUpdatePhotographer {
+    id
+    photos {
+      items {
+        id
+        key
+        isFeatured
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeletePhotographer {
+  onDeletePhotographer {
+    id
+    photos {
+      items {
+        id
+        key
+        isFeatured
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
