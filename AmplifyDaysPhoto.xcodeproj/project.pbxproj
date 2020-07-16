@@ -25,6 +25,7 @@
 		9EFEBF9624C0C4E400A2AD65 /* NewPhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBF9524C0C4E400A2AD65 /* NewPhotoButton.swift */; };
 		9EFEBF9824C0C55200A2AD65 /* PhotosGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBF9724C0C55200A2AD65 /* PhotosGrid.swift */; };
 		9EFEBF9A24C0C59300A2AD65 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBF9924C0C59300A2AD65 /* FeaturedView.swift */; };
+		9EFEBF9D24C0D67000A2AD65 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFEBF9C24C0D67000A2AD65 /* GalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9EFEBF9524C0C4E400A2AD65 /* NewPhotoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPhotoButton.swift; sourceTree = "<group>"; };
 		9EFEBF9724C0C55200A2AD65 /* PhotosGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosGrid.swift; sourceTree = "<group>"; };
 		9EFEBF9924C0C59300A2AD65 /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
+		9EFEBF9C24C0D67000A2AD65 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		C18973D3A4714E1D6763A1EC /* Pods_AmplifyDaysPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyDaysPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA17D3D186468F92095F97E3 /* Pods-AmplifyDaysPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyDaysPhoto.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyDaysPhoto/Pods-AmplifyDaysPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				9E26E24C24BECC1F00037412 /* AmplifyDaysPhotoApp.swift */,
 				9E26E26024BED83700037412 /* AuthView.swift */,
 				9E26E26624BEDD3200037412 /* ImageLoader.swift */,
+				9EFEBF9C24C0D67000A2AD65 /* GalleryView.swift */,
 			);
 			path = AmplifyDaysPhoto;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				9EFEBF9A24C0C59300A2AD65 /* FeaturedView.swift in Sources */,
 				9EFEBF9624C0C4E400A2AD65 /* NewPhotoButton.swift in Sources */,
 				9E26E27424BEDDDD00037412 /* Photo.swift in Sources */,
+				9EFEBF9D24C0D67000A2AD65 /* GalleryView.swift in Sources */,
 				9E26E24D24BECC1F00037412 /* AmplifyDaysPhotoApp.swift in Sources */,
 				9E26E27324BEDDDD00037412 /* Photo+Schema.swift in Sources */,
 				9E26E27524BEDDDD00037412 /* AmplifyModels.swift in Sources */,
