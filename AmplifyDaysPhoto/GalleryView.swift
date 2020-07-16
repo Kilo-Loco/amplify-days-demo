@@ -39,6 +39,31 @@ struct PhotosGrid: View {
     }
 }
 
+struct NewPhotoButton: View {
+    
+    let action: () -> Void
+    let isInProgress: Bool
+    
+    var body: some View {
+        Button(action: action, label: {
+            if isInProgress {
+                ProgressView()
+                    .padding()
+                    .background(Color.blue)
+                    .clipShape(Circle())
+                
+            } else {
+                Image(systemName: "plus")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.purple)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+            }
+        })
+    }
+}
+
 struct GalleryView: View {
     let columns = [GridItem(.adaptive(minimum: 80))]
     
@@ -75,24 +100,10 @@ struct GalleryView: View {
                 }
                 
                 VStack {
-                    Spacer()
                     
-                    Button(action: showPhotoPicker, label: {
-                        if isUploading {
-                            ProgressView()
-                                .padding()
-                                .background(Color.purple)
-                                .clipShape(Circle())
-                            
-                        } else {
-                            Image(systemName: "plus")
-                                .font(.largeTitle)
-                                .padding()
-                                .background(Color.purple)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                        }
-                    })
+                    Spacer()
+                    NewPhotoButton(action: showPhotoPicker, isInProgress: isUploading)
+                    
                 } //vstack
             } //zstack
             .navigationTitle("Photos")
