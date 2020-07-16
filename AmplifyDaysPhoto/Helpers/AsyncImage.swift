@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct AsyncImage: View {
-    
     @ObservedObject var imageLoader = ImageLoader()
     
     let imageKey: String
     let size: ImageSize
+    
+    init(imageKey: String, size: ImageSize = .small) {
+        self.imageKey = imageKey
+        self.size = size
+    }
     
     var body: some View {
         Group {
@@ -28,7 +32,6 @@ struct AsyncImage: View {
             }
         }
         .onAppear {
-            
             imageLoader.loadImage(with: imageKey)
         }
     }

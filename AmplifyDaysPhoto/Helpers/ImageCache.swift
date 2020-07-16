@@ -12,7 +12,6 @@ class ImageCache: NSCache<NSString, UIImage> {
     private override init() {}
     
     func add(_ image: UIImage, for key: String) {
-        print("cached image with key:", key)
         setObject(image, forKey: key as NSString)
     }
     
