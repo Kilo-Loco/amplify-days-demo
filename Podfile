@@ -7,6 +7,7 @@ target 'AmplifyDaysPhoto' do
 
   # Pods for AmplifyDaysPhoto
   pod 'Amplify'
+  pod 'Amplify/Tools'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSDataStorePlugin'

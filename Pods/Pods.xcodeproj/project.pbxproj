@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -4201,6 +4201,7 @@
 			buildPhases = (
 				952F33057D5140172F5BAC828826DF3F /* Headers */,
 				6C3E0D79EC083F6E04E7E021A4393BDD /* [CP-User] Default */,
+				F851818C04BF54C01925D46081C18E3F /* [CP-User] AmplifyTools */,
 				7042C22510BEEDA0ADF87D3484D41B8F /* Sources */,
 				D26C978D4255CBB3992E66A2F7F12309 /* Frameworks */,
 				635960649943E5DAFCCD14023A959244 /* Resources */,
@@ -4437,7 +4438,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -4578,6 +4579,16 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"no-op\"";
+		};
+		F851818C04BF54C01925D46081C18E3F /* [CP-User] AmplifyTools */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] AmplifyTools";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${PODS_ROOT}/AmplifyTools\"; cp -vf \"${PODS_TARGET_SRCROOT}/AmplifyTools/amplify-tools.sh\" \"${PODS_ROOT}/AmplifyTools/.\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

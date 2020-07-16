@@ -1,17 +1,40 @@
 # this is an auto generated file. This will be overwritten
+query SyncPhotos(
+  $filter: ModelPhotoFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncPhotos(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      key
+      isFeatured
+      photographerId
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
 query GetPhoto($id: ID!) {
   getPhoto(id: $id) {
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }
@@ -26,48 +49,14 @@ query ListPhotos(
       id
       key
       isFeatured
-      photographer {
-        id
-        createdAt
-        updatedAt
-      }
+      photographerId
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }
     nextToken
-  }
-}
-query GetPhotographer($id: ID!) {
-  getPhotographer(id: $id) {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-    createdAt
-    updatedAt
-  }
-}
-query ListPhotographers(
-  $filter: ModelPhotographerFilterInput
-  $limit: Int
-  $nextToken: String
-) {
-  listPhotographers(filter: $filter, limit: $limit, nextToken: $nextToken) {
-    items {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-    nextToken
+    startedAt
   }
 }

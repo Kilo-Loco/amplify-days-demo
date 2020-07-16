@@ -8,7 +8,7 @@ extension Photo {
     case id
     case key
     case isFeatured
-    case photographer
+    case photographerId
   }
   
   public static let keys = CodingKeys.self
@@ -23,7 +23,7 @@ extension Photo {
       .id(),
       .field(photo.key, is: .required, ofType: .string),
       .field(photo.isFeatured, is: .required, ofType: .bool),
-      .belongsTo(photo.photographer, is: .optional, ofType: Photographer.self, targetName: "photoPhotographerId")
+      .field(photo.photographerId, is: .required, ofType: .string)
     )
     }
 }

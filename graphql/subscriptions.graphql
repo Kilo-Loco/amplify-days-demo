@@ -4,14 +4,10 @@ subscription OnCreatePhoto {
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }
@@ -21,14 +17,10 @@ subscription OnUpdatePhoto {
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }
@@ -38,65 +30,10 @@ subscription OnDeletePhoto {
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-    createdAt
-    updatedAt
-  }
-}
-subscription OnCreatePhotographer {
-  onCreatePhotographer {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-    createdAt
-    updatedAt
-  }
-}
-subscription OnUpdatePhotographer {
-  onUpdatePhotographer {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-    createdAt
-    updatedAt
-  }
-}
-subscription OnDeletePhotographer {
-  onDeletePhotographer {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }

@@ -7,14 +7,10 @@ mutation CreatePhoto(
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }
@@ -27,14 +23,10 @@ mutation UpdatePhoto(
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }
@@ -47,74 +39,10 @@ mutation DeletePhoto(
     id
     key
     isFeatured
-    photographer {
-      id
-      photos {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation CreatePhotographer(
-  $input: CreatePhotographerInput!
-  $condition: ModelPhotographerConditionInput
-) {
-  createPhotographer(input: $input, condition: $condition) {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation UpdatePhotographer(
-  $input: UpdatePhotographerInput!
-  $condition: ModelPhotographerConditionInput
-) {
-  updatePhotographer(input: $input, condition: $condition) {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-    createdAt
-    updatedAt
-  }
-}
-mutation DeletePhotographer(
-  $input: DeletePhotographerInput!
-  $condition: ModelPhotographerConditionInput
-) {
-  deletePhotographer(input: $input, condition: $condition) {
-    id
-    photos {
-      items {
-        id
-        key
-        isFeatured
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
+    photographerId
+    _version
+    _deleted
+    _lastChangedAt
     createdAt
     updatedAt
   }

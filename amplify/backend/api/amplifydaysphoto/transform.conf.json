@@ -1,4 +1,38 @@
 {
     "Version": 5,
-    "ElasticsearchWarning": true
+    "ElasticsearchWarning": true,
+    "ResolverConfig": {
+        "project": {
+            "ConflictHandler": "AUTOMERGE",
+            "ConflictDetection": "VERSION"
+        }
+    },
+    "StackMapping": {
+        "PhotophotographerResolver": "ConnectionStack",
+        "PhotographerphotosResolver": "ConnectionStack",
+        "PhotoTable": "Photo",
+        "PhotoIAMRole": "Photo",
+        "PhotoDataSource": "Photo",
+        "SyncPhotoResolver": "Photo",
+        "GetPhotoResolver": "Photo",
+        "ListPhotoResolver": "Photo",
+        "CreatePhotoResolver": "Photo",
+        "UpdatePhotoResolver": "Photo",
+        "DeletePhotoResolver": "Photo",
+        "GetAttPhotoTableStreamArn": "Photo",
+        "GetAttPhotoDataSourceName": "Photo",
+        "GetAttPhotoTableName": "Photo",
+        "PhotographerTable": "Photographer",
+        "PhotographerIAMRole": "Photographer",
+        "PhotographerDataSource": "Photographer",
+        "SyncPhotographerResolver": "Photographer",
+        "GetPhotographerResolver": "Photographer",
+        "ListPhotographerResolver": "Photographer",
+        "CreatePhotographerResolver": "Photographer",
+        "UpdatePhotographerResolver": "Photographer",
+        "DeletePhotographerResolver": "Photographer",
+        "GetAttPhotographerTableStreamArn": "Photographer",
+        "GetAttPhotographerDataSourceName": "Photographer",
+        "GetAttPhotographerTableName": "Photographer"
+    }
 }
